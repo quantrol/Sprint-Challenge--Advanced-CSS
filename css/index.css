@@ -170,6 +170,13 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -185,6 +192,15 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .blast {
+    width: 100%;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -260,12 +276,4 @@ footer {
 }
 .walk .walk-text p {
   margin-bottom: 26px;
-}
-.walk .walk-img {
-  width: 100%;
-}
-.walk .walk-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
 }
