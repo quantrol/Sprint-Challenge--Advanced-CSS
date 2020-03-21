@@ -9,11 +9,18 @@
     }
     .home{
     max-width: 90%;
+    justify-content: center;
     }
     
 
   }
+
 .intro {
+  @media @phone{
+    .main-img {
+      padding: 15px;
+    }
+  }
 
 h2 {
   padding: 15px;
@@ -40,6 +47,7 @@ width: 100%;
   }
   .blast{
     width: 100%;
+    padding: 10px;
   }
 }
 
@@ -90,32 +98,42 @@ display: flex;
 flex-direction: row-reverse;
 margin-top: 60px;
 border-top: 1px solid @main-border-color;
-padding: 50px 60px;
 justify-content: space-evenly;
 
+@media @phone {
+  .walk{
+    max-width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    
+    padding:15px;
+    a {
+      width: 100%;
+    }
+    .space-walkie {
+      max-width: 100%;
+    }
+  }
+}
 
 
 .custom-btn {
-width: 50%;
-display:flex;
+  justify-content: flex-start;
+  text-align: center;
+  max-width: 100%;
+  padding-top: 1rem;
+ 
+  a{
+    
+    color:white;
+  }
+.custom-btn2();
+@media @phone {
+  .custom-btn();
+   width: 100%;
+}
+}
 
-a {
-  color: white;
-padding-top: 1rem;
-display: block;
-background-color: @main-font-color;
-cursor: pointer;
-width: 200px;
-height: 45px;
-font-size: 2rem;
-border-radius: 10px;
-text-align: center;
-&:hover{
-background-color: @accent-colour;
-color:black; 
-} 
-}
-}
 .walk-img {
 margin: 1rem;
 width: 100%;
@@ -123,8 +141,13 @@ width: 100%;
 }
 
 .walk-text {
-max-width: 50%;
-margin: 1rem;
+  justify-content: flex-start;
+  max-width: 50%;
+  margin: 0 auto;
+@media @phone {
+  max-width: 100%;
+  margin: 0 auto;
+}
 
 h3 {
 margin-bottom: 10px;
