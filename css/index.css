@@ -172,9 +172,12 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk {
-    display: flex;
     flex-direction: column;
     align-content: center;
+    margin: 0 auto;
+  }
+  .home .home {
+    max-width: 90%;
   }
 }
 .home .intro h2 {
